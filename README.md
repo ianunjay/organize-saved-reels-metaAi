@@ -96,60 +96,12 @@ You don't need to read this to use it. It's here so you know what the prompt is 
 | 🛠️ Tools Library | Name + type (AI / Design / Game / Learning) + what it does |
 | 🎵 Music Library | Song + artist from the audio credit |
 
-## Checklist — before you call it done
-
-- [ ] Total in HTML = total fetched?
-- [ ] Can you search a movie / book / tool you *know* you saved and find it?
-- [ ] Do Open Reel links open the right reel?
-- [ ] Do Movies / Books / Tools / Music tabs show non-zero counts?
-- [ ] Is the HTML self-contained (works without the CSV)?
 
 ## 3 traps to avoid
 
 1. **"Last 7 days" trap:** if your latest save is older, last 7 days = 0. Always ask for ALL, then filter in the HTML.
 2. **Combined-entities trap:** if you only ask for "named entities", movies / books / tools get mashed into one field. Ask for *separate columns* — the prompt already does this.
 3. **Empty-file trap:** if the HTML shows "No reels match", the data file handed to the builder was empty. Ask it to rebuild from the backup / re-verify `len(DATA) == total`.
-
-## Want a smaller version first?
-
-Add this line at the very top of the prompt:
-
-```text
-Only do this for my Books + Tools reels first (topic = Books & Reading OR Tech / AI / Tools & Websites), then build the HTML for just those. Once that works, do the rest.
-```
-
-## Reuse it later
-
-1. Save a new reel → run the same prompt again.
-2. Or ask: *"Re-run the same saved-reels library prompt, but only for reels saved after `[date]`. Append them to the library."*
-3. Keep the HTML file — it's your library. The CSV is your backup / spreadsheet.
-
-## Host it on GitHub (public)
-
-This repo is just the guide — no personal data in it. To publish it:
-
-1. Create a new public repo on GitHub (e.g. `saved-reels-library`).
-2. Upload these files:
-   - `saved_reels_guide_light.html` — the guide (rename to `index.html` if you want it as the homepage)
-   - `README.md` — this file
-3. Go to **Settings → Pages**:
-   - **Source:** Deploy from a branch
-   - **Branch:** `main` / `(root)`
-   - Save.
-4. Your public link will be: `https://<your-username>.github.io/<your-repo-name>/`
-   - If you renamed the guide to `index.html`, that link opens the guide directly.
-   - If you kept the original name, share: `https://<your-username>.github.io/<your-repo-name>/saved_reels_guide_light.html`
-
-To update the guide later, just replace the HTML file and commit — Pages redeploys automatically.
-
-> ⚠️ **Privacy — read this before you publish:** Do **not** commit your personal `saved_reels_decoded.json`, `saved_reels_decoded.csv`, or `saved_reels_library.html` (with your reels embedded) to a public repo. Those contain your saved reels, authors, and links. Keep those files private / local. Only publish the guide + README, which contain no personal data.
-
-## Files in this repo
-
-| File | What it is |
-| ---- | ---------- |
-| `saved_reels_guide_light.html` | The guide — Step 1, Step 2 prompt, details. Light theme. Works standalone. |
-| `README.md` | This file — same guide in GitHub-friendly format. Copy-paste ready. |
 
 ## License
 
