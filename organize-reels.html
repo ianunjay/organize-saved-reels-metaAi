@@ -1,0 +1,168 @@
+<html lang="en"><style>* { -webkit-text-size-adjust: 95.33333333333333% !important; }</style><head><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Saved Reels Library — Guide + Prompt</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf8f4;--paper:#fff;--ink:#1a1a1e;--muted:#6b6b76;--line:#e8e2d9;--accent:#ff5a3c;--green:#0e8a5a}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.hero{background:linear-gradient(135deg,#fff6e9 0%,#fff 48%,#eef2ff 100%);border-bottom:1px solid var(--line);padding:52px 20px 36px}
+.hero-inner,.wrap{max-width:880px;margin:auto}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:800}
+h1{font-family:Fraunces,serif;font-size:46px;line-height:1.05;margin:14px 0 12px}h1 em{color:var(--accent);font-style:normal}
+.sub{font-size:18px;color:var(--muted);max-width:680px}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.pill{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-size:13px;font-weight:600}
+.wrap{padding:28px 20px 70px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:26px;margin:16px 0;box-shadow:0 4px 20px rgba(0,0,0,.04)}
+.card h2{font-family:Fraunces,serif;font-size:26px;margin:0 0 8px}.card h3{font-size:18px;margin:0 0 6px}
+p,li{font-size:15.5px;color:#3a3a44}.muted{color:var(--muted)}
+.step{display:flex;gap:16px}.num{flex:0 0 52px;height:52px;border-radius:50%;background:#1a1a1e;color:#fff;display:grid;place-items:center;font-weight:800;font-size:20px}
+.big{font-size:20px;font-weight:700}.big-num{font-family:Fraunces,serif;font-size:44px;line-height:1;color:var(--accent)}
+pre{background:#1a1a1e;color:#f2f2f5;border-radius:16px;padding:20px;white-space:pre-wrap;word-break:break-word;font-size:13.5px;line-height:1.65;max-height:560px;overflow:auto}
+.btn{display:inline-block;background:#1a1a1e;color:#fff;font-weight:700;padding:12px 20px;border-radius:999px;border:0;cursor:pointer;font-size:14px;text-decoration:none}.btn.accent{background:var(--accent)}.btn.ghost{background:#fff;color:#1a1a1e;border:1px solid var(--line)}
+code{background:#f1ede6;padding:2px 7px;border-radius:6px;font-size:13px}
+.store{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}.store a{flex:1;min-width:220px;background:#1a1a1e;color:#fff;text-decoration:none;border-radius:16px;padding:16px;display:block}.store a.light{background:#fff;color:#1a1a1e;border:1px solid var(--line)}.store small{opacity:.7}.store b{font-size:17px}
+.warn{background:#fff3d6;border:1px solid #f0d48a}.ok{background:#e8f8f0;border:1px solid #bfe8d2}
+details{border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin:12px 0;background:#fff}details summary{font-weight:700;cursor:pointer;font-size:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:640px){.grid2{grid-template-columns:1fr}h1{font-size:34px}}
+</style></head><body>
+<header class="hero"><div class="hero-inner">
+<div class="eyebrow">✦ Guide • Copy • Paste • Done</div>
+<h1>Turn your saved reels<br>into a <em>beautiful library.</em></h1>
+<p class="sub">Two steps to start. Everything else is just details below.</p>
+<div class="pills"><span class="pill">📚 All Reels</span><span class="pill">🎬 Movies</span><span class="pill">📖 Books</span><span class="pill">🛠️ Tools</span><span class="pill">🎵 Music</span></div>
+</div></header>
+
+<div class="wrap">
+
+<!-- STEP 1 -->
+<div class="card" id="step1"><div class="step"><div class="num">1</div><div>
+<div class="big-num">Step 1</div><h2 style="margin:4px 0">Get Meta AI</h2>
+<p>Go to the Meta AI website, <b>or</b> download the Meta AI app — depending on your phone.</p>
+<div class="store">
+<a href="https://meta.ai" target="_blank" rel="noopener"><small>🌐 WEBSITE — works on any device</small><br><b>meta.ai →</b><br><small>Open it in your browser, sign in, start chatting.</small></a>
+<a href="https://apps.apple.com/app/id6443721219" target="_blank" rel="noopener"><small>🍎 iPHONE / iPAD — iOS</small><br><b>App Store →</b><br><small>Search “Meta AI” in the App Store and download it.</small></a>
+<a href="https://play.google.com/store/apps/details?id=com.facebook.stella" target="_blank" rel="noopener"><small>🤖 ANDROID</small><br><b>Google Play →</b><br><small>Search “Meta AI” in the Play Store and download it.</small></a>
+</div>
+<p class="muted" style="margin-top:12px">Tip: make sure you’re signed in to the same account where you saved your reels on Instagram / Facebook. That’s how it can find them.</p>
+</div></div></div>
+
+<!-- STEP 2 -->
+<div class="card" id="step2"><div class="step"><div class="num">2</div><div>
+<div class="big-num">Step 2</div><h2 style="margin:4px 0">Paste this prompt</h2>
+<p>Open a new chat in Meta AI, paste the <b>whole prompt below</b>, and send it. That’s it — it does the rest.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin:14px 0"><button class="btn accent" onclick="copyPrompt()">⧉ Copy prompt</button><button class="btn ghost" onclick="selectPrompt()">Select all text</button></div>
+<pre id="prompt">I want you to go through ALL of my saved reels - not just recent ones, every single one I have ever saved on Instagram and Facebook.
+
+Step 1 - Fetch them all:
+Pull every saved reel (post_type = REEL, saved_by_me = true, since 2004-02-04, no limit). Tell me the total count. If Instagram and Facebook differ, do both and say how many came from each.
+
+Step 2 - Decode each reel:
+For every reel, create these columns:
+- created_at, author_username, author_name, url, like_count, comment_count, hashtags, tagged_users, music_track, music_artist
+- topic_category (choose one: Movies &amp; TV, Books &amp; Reading, Music, Tech / AI / Tools &amp; Websites, Design &amp; Art, Comedy, Sports, Food &amp; Cooking, Travel &amp; Places, Fashion &amp; Style, Fitness &amp; Health, Business &amp; Money, Relationships &amp; Lifestyle, Gaming, News &amp; Society, Spirituality &amp; Philosophy, Education &amp; Learning, Other / Mixed)
+- what_it_is_talking_about (1-line subject)
+- description_enriched (merge core insight + narrative - which includes on-screen text, overlays, book/film covers, spoken dialogue - + tagged users, hashtags, music/audio credits, author bio. If a reel shows a UI tool name, book cover, or film title on screen even if nobody says it out loud, include it here.)
+- movies_suggested (separate column: only quoted Title-Case titles near film/movie/series/clip words. Filter out dialogue/shouting/fragments. Do NOT invent titles.)
+- books_suggested (separate column: only 'Title by Author' pattern, e.g. 'Atomic Habits by James Clear'. Do NOT invent books.)
+- websites_tools_apps_suggested (separate column: domains + 'X website / app / tool / game' patterns. Do NOT invent tools.)
+- songs_music_suggested (separate column: from music_track + music_artist credits)
+- people_tagged_mentioned, places_mentioned
+Do NOT invent a title/tool/book if it is not named in the available metadata. Empty means 'no clean title in metadata', not 'no suggestion'.
+
+Step 3 - Save the decoded data:
+Save it as BOTH saved_reels_decoded.json (all reels, with topic counts) and saved_reels_decoded.csv (same columns). Confirm the total count matches Step 1.
+
+Step 4 - Build me a standalone HTML file (do NOT use the artifact builder, build the HTML file directly with Python):
+File name: saved_reels_library.html
+The HTML must EMBED the decoded JSON data inside itself (const DATA = [...] in a &lt;script&gt;), so it works on its own with no separate CSV/JSON needed. It must contain ALL reels, not a sample.
+The HTML must have:
+- Header: 'My Saved Reels Library' + total count + subtitle
+- Stats row: counts by topic_category + counts for movies/books/tools/songs decoded
+- Sticky controls: text search (searches what, description, author, movies/books/websites/songs), topic chips (All + every topic), type filter (All / Movies only / Books only / Tools only / Music only / Only with decoded titles), sort (Newest, Oldest, Most liked, Most commented, A-Z), 'Only decoded' toggle
+- Tabs/Sections: 1) All Reels - full library grouped by topic 2) Movie Library - only reels with movies_suggested, card per movie: title + genre inferred from description (Drama, Comedy, Thriller, Romance, Horror, Documentary, Animation, Crime, Sci-Fi, Biopic, Family, Unknown) 3) Book Library - only reels with books_suggested, card per book: split 'Title by Author', genre inferred (Self-help, Fiction, Comedy, Biography, Business, Poetry, Unknown) 4) Tools &amp; Websites Library - only reels with websites_tools_apps_suggested, card per tool: name + tool type inferred (AI Tool, Design Tool, Productivity, Website/Fun Site, Game, Video Editing, Music, Learning, Other) + what it does 5) Music Library - only reels with songs_music_suggested, card per song: song + artist
+- Every card: topic pill, movie/book/tool/music pills, author_username, created_at, like_count, comment_count, description (collapsed with Expand/Collapse), hashtags, and a working 'Open Reel' link using the url field
+- Empty state: 'No reels match these filters' only if filter truly returns 0
+- Footer note: 'Genres and tool types are inferred from descriptions. Empty decoded columns mean no clean title/tool was named in the metadata.'
+- Clean, modern, responsive grid, dark editorial design, no placeholder images, typography + colored pills
+- Before finishing, verify the embedded DATA length equals the total from Step 1 and that a known title from the data appears in the HTML.
+Deliver: the HTML file link + a short summary (total count, topic split, how many movies/books/tools/songs decoded).
+</pre>
+<p id="copied" style="color:var(--green);font-weight:700"></p>
+<p class="muted">The prompt is included in this HTML file itself — share just this file and anyone can copy it from here.</p>
+</div></div></div>
+
+<!-- REST BELOW -->
+<h2 style="font-family:Fraunces,serif;font-size:30px;margin-top:36px">The rest — details, in case you want them ↓</h2>
+<p class="muted">You don’t need to read this to use it. It’s here so you know what the prompt is doing, what to check, and what to do if something looks off.</p>
+
+<details open=""><summary>What you’ll end up with</summary><ul>
+<li>A <b>standalone HTML file</b> that works on its own — all your reels embedded inside it</li>
+<li>Sections: <b>All Reels • Movie Library • Book Library • Tools &amp; Websites • Music Library</b></li>
+<li>Search + filters by topic, type, decoded-only, sort by newest / most liked</li>
+<li>Separate columns for <b>movies suggested, books suggested, websites/tools suggested, songs suggested</b> — not buried in one description</li>
+</ul></details>
+
+<details><summary>What the prompt actually does (4 parts)</summary><ol>
+<li><b>Fetch everything</b> — all saved reels, no limit, from 2004-02-04, Instagram + Facebook.</li>
+<li><b>Decode each reel</b> — topic, what it’s about, enriched description (on-screen text, overlays, covers, tags, music credits, author bio — so a tool name shown on screen counts even if nobody says it), plus separate columns for movies / books / websites / songs. It does <b>not</b> invent titles.</li>
+<li><b>Save the data</b> — as <code>saved_reels_decoded.json</code> + <code>saved_reels_decoded.csv</code>, with total confirmed.</li>
+<li><b>Build the HTML directly</b> — with Python, embedding the JSON inside the HTML (<code>const DATA = [...]</code>), so it works with no separate file. It verifies the embedded count before finishing.</li>
+</ol></details>
+
+<details><summary>What it looks like</summary><div class="grid2">
+<div style="background:#fff6e9;border-radius:12px;padding:14px"><b>🎬 Movie Library</b><p style="font-size:14px">Card per movie: title + genre. Example: <i>Sapta Sagaradaache Ello – Side A</i> → Drama / Romance.</p></div>
+<div style="background:#eef2ff;border-radius:12px;padding:14px"><b>📖 Book Library</b><p style="font-size:14px">Card per book: <i>Atomic Habits by James Clear</i> → Self-help.</p></div>
+<div style="background:#e8f8f0;border-radius:12px;padding:14px"><b>🛠️ Tools Library</b><p style="font-size:14px">Card per tool: name + type (AI / Design / Game / Learning) + what it does.</p></div>
+<div style="background:#fdf0f5;border-radius:12px;padding:14px"><b>🎵 Music Library</b><p style="font-size:14px">Card per song: song + artist from the audio credit.</p></div>
+</div></details>
+
+<details><summary>Checklist — before you call it done</summary><ul>
+<li>Total in HTML = total fetched?</li>
+<li>Can you search a movie/book/tool you <i>know</i> you saved and find it?</li>
+<li>Do Open Reel links open the right reel?</li>
+<li>Do Movies / Books / Tools / Music tabs show non-zero counts?</li>
+<li>Is the HTML self-contained (works without the CSV)?</li>
+</ul></details>
+
+<details><summary>3 traps to avoid</summary><ul>
+<li><b>“Last 7 days” trap:</b> if your latest save is older, last 7 days = 0. Always ask for ALL, then filter in the HTML.</li>
+<li><b>Combined-entities trap:</b> if you only ask for “named entities”, movies/books/tools get mashed into one field. Ask for <b>separate columns</b> — the prompt already does this.</li>
+<li><b>Empty-file trap:</b> if the HTML shows “No reels match”, the data file handed to the builder was empty. Ask it to rebuild from the backup / re-verify <code>len(DATA) == total</code>.</li>
+</ul></details>
+
+<details><summary>Want a smaller version first?</summary><p>Add this line at the very top of the prompt:</p><pre style="max-height:none;background:#fff6e9;color:#1a1a1e;border:1px solid #f0d48a">Only do this for my Books + Tools reels first (topic = Books &amp; Reading OR Tech / AI / Tools &amp; Websites), then build the HTML for just those. Once that works, do the rest.</pre></details>
+
+<details><summary>Reuse it later</summary><ol>
+<li>Save a new reel → run the same prompt again.</li>
+<li>Or ask: <i>“Re-run the same saved-reels library prompt, but only for reels saved after [date]. Append them to the library.”</i></li>
+<li>Keep the HTML file — it’s your library. The CSV is your backup / spreadsheet.</li>
+</ol></details>
+
+<p class="muted" style="text-align:center;margin-top:30px">Made from a real run: 731 saved reels → decoded → library. Genres &amp; tool types are inferred from descriptions.</p>
+</div>
+<script>
+const PROMPT = "I want you to go through ALL of my saved reels - not just recent ones, every single one I have ever saved on Instagram and Facebook.\n\nStep 1 - Fetch them all:\nPull every saved reel (post_type = REEL, saved_by_me = true, since 2004-02-04, no limit). Tell me the total count. If Instagram and Facebook differ, do both and say how many came from each.\n\nStep 2 - Decode each reel:\nFor every reel, create these columns:\n- created_at, author_username, author_name, url, like_count, comment_count, hashtags, tagged_users, music_track, music_artist\n- topic_category (choose one: Movies & TV, Books & Reading, Music, Tech / AI / Tools & Websites, Design & Art, Comedy, Sports, Food & Cooking, Travel & Places, Fashion & Style, Fitness & Health, Business & Money, Relationships & Lifestyle, Gaming, News & Society, Spirituality & Philosophy, Education & Learning, Other / Mixed)\n- what_it_is_talking_about (1-line subject)\n- description_enriched (merge core insight + narrative - which includes on-screen text, overlays, book/film covers, spoken dialogue - + tagged users, hashtags, music/audio credits, author bio. If a reel shows a UI tool name, book cover, or film title on screen even if nobody says it out loud, include it here.)\n- movies_suggested (separate column: only quoted Title-Case titles near film/movie/series/clip words. Filter out dialogue/shouting/fragments. Do NOT invent titles.)\n- books_suggested (separate column: only 'Title by Author' pattern, e.g. 'Atomic Habits by James Clear'. Do NOT invent books.)\n- websites_tools_apps_suggested (separate column: domains + 'X website / app / tool / game' patterns. Do NOT invent tools.)\n- songs_music_suggested (separate column: from music_track + music_artist credits)\n- people_tagged_mentioned, places_mentioned\nDo NOT invent a title/tool/book if it is not named in the available metadata. Empty means 'no clean title in metadata', not 'no suggestion'.\n\nStep 3 - Save the decoded data:\nSave it as BOTH saved_reels_decoded.json (all reels, with topic counts) and saved_reels_decoded.csv (same columns). Confirm the total count matches Step 1.\n\nStep 4 - Build me a standalone HTML file (do NOT use the artifact builder, build the HTML file directly with Python):\nFile name: saved_reels_library.html\nThe HTML must EMBED the decoded JSON data inside itself (const DATA = [...] in a <script>), so it works on its own with no separate CSV/JSON needed. It must contain ALL reels, not a sample.\nThe HTML must have:\n- Header: 'My Saved Reels Library' + total count + subtitle\n- Stats row: counts by topic_category + counts for movies/books/tools/songs decoded\n- Sticky controls: text search (searches what, description, author, movies/books/websites/songs), topic chips (All + every topic), type filter (All / Movies only / Books only / Tools only / Music only / Only with decoded titles), sort (Newest, Oldest, Most liked, Most commented, A-Z), 'Only decoded' toggle\n- Tabs/Sections: 1) All Reels - full library grouped by topic 2) Movie Library - only reels with movies_suggested, card per movie: title + genre inferred from description (Drama, Comedy, Thriller, Romance, Horror, Documentary, Animation, Crime, Sci-Fi, Biopic, Family, Unknown) 3) Book Library - only reels with books_suggested, card per book: split 'Title by Author', genre inferred (Self-help, Fiction, Comedy, Biography, Business, Poetry, Unknown) 4) Tools & Websites Library - only reels with websites_tools_apps_suggested, card per tool: name + tool type inferred (AI Tool, Design Tool, Productivity, Website/Fun Site, Game, Video Editing, Music, Learning, Other) + what it does 5) Music Library - only reels with songs_music_suggested, card per song: song + artist\n- Every card: topic pill, movie/book/tool/music pills, author_username, created_at, like_count, comment_count, description (collapsed with Expand/Collapse), hashtags, and a working 'Open Reel' link using the url field\n- Empty state: 'No reels match these filters' only if filter truly returns 0\n- Footer note: 'Genres and tool types are inferred from descriptions. Empty decoded columns mean no clean title/tool was named in the metadata.'\n- Clean, modern, responsive grid, dark editorial design, no placeholder images, typography + colored pills\n- Before finishing, verify the embedded DATA length equals the total from Step 1 and that a known title from the data appears in the HTML.\nDeliver: the HTML file link + a short summary (total count, topic split, how many movies/books/tools/songs decoded).\n";
+document.getElementById('prompt').textContent = PROMPT;
+function copyPrompt(){navigator.clipboard.writeText(PROMPT).then(()=>{document.getElementById('copied').textContent='✅ Copied — paste it into a new chat in Meta AI.';}).catch(()=>{document.getElementById('copied').textContent='Copy failed — select the text manually.';});}
+function selectPrompt(){const r=document.createRange();r.selectNode(document.getElementById('prompt'));const s=getSelection();s.removeAllRanges();s.addRange(r);}
+</script><script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body></html>
